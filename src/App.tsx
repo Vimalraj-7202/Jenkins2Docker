@@ -32,7 +32,6 @@ const stages = [
   { name: "Deploy", status: "pending" },
 ];
 
-
 export default function App() {
   return (
     <Box
