@@ -55,7 +55,7 @@ export default function App() {
           color: "#1d63ed",
         }}
       >
-        Jenkins 2 Docker
+        Jenkins2Docker
       </Typography>
 
       <Box
