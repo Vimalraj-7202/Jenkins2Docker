@@ -26,5 +26,10 @@ pipeline
                 sh 'npm run build'
             }
         }
+        stage('Build Docker Image'){
+            steps{
+                sh 'docker build -t jenkins2docker:v1 .'
+            }
+        }
     }
        }
