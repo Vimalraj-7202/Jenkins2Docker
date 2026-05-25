@@ -1,4 +1,4 @@
-service:
+services:
  react-app:
    image: jenkins2docker:v1
    container_name: react-app
