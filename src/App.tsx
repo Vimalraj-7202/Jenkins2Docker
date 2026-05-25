@@ -27,7 +27,7 @@ const pulse = keyframes`
 const stages = [
   { name: "Checkout", status: "done" },
   { name: "Build", status: "done" },
-  {name:"Environemnt Setup", status: "done"},
+  { name: "Environment Setup", status: "done" },
   { name: "Test", status: "done" },
   { name: "Docker", status: "running" },
   { name: "Deploy", status: "pending" },
@@ -81,8 +81,8 @@ export default function App() {
             <Paper
               elevation={0}
               sx={{
-                width: 140,
-                height: 80,
+                width: 150,
+                height: 85,
                 borderRadius: "20px",
                 border: "1px solid #e5e7eb",
                 backdropFilter: "blur(12px)",
@@ -90,6 +90,7 @@ export default function App() {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
+                textAlign: "center",
                 transition: "all .3s ease",
                 animation:
                   stage.status === "running" ? `${pulse} 2s infinite` : "none",
@@ -100,7 +101,16 @@ export default function App() {
                 },
               }}
             >
-              <Typography sx={{ fontWeight: 600 }}>{stage.name}</Typography>
+              <Typography
+                sx={{
+                  fontWeight: 600,
+                  fontSize: "0.85rem",
+                  lineHeight: 1.2,
+                  px: 1,
+                }}
+              >
+                {stage.name}
+              </Typography>
 
               <Box
                 sx={{
@@ -112,8 +122,8 @@ export default function App() {
                     stage.status === "done"
                       ? "#22c55e"
                       : stage.status === "running"
-                        ? "#f59e0b"
-                        : "#d1d5db",
+                      ? "#f59e0b"
+                      : "#d1d5db",
                 }}
               />
             </Paper>
