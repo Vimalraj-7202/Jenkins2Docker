@@ -1,0 +1,7 @@
+service:
+ react-app:
+   image: jenkins2docker:v1
+   container_name: react-app
+   ports:
+      -"3001:80"
+   restart: unless-stoped
