@@ -27,6 +27,7 @@ const pulse = keyframes`
 const stages = [
   { name: "Checkout", status: "done" },
   { name: "Build", status: "done" },
+  {name:"Environemnt Setup", status: "done"},
   { name: "Test", status: "done" },
   { name: "Docker", status: "running" },
   { name: "Deploy", status: "pending" },
