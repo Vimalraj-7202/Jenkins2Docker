@@ -5,7 +5,7 @@ pipeline
     stages {
         stage('Checkout') {
             steps {
-                git branch:'dev',
+                git branch:'qa',
                 url:'https://github.com/Vimalraj-7202/Jenkins2Docker.git'
             }
         }
