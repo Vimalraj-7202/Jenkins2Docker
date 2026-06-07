@@ -2,6 +2,9 @@
 pipeline
        {
     agent any
+        tools {
+        nodejs 'NodeJS25'
+    }
     stages {
         stage('Checkout') {
             steps {
